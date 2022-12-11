@@ -1,40 +1,38 @@
-import Image from "next/image"
-import appPreviewImg from "../src/assets/app-nlw-copa-preview.png"
-import logoImg from "../src/assets/logo.svg"
-import usersAvatarExampleImg from "../src/assets/users-avatar-example.png"
-import iconCheckImg from "../src/assets/icon-check.svg"
-import { api } from "../src/lib/axios"
-import { FormEvent, useState } from "react"
+import Image from "next/image";
+import appPreviewImg from '../assets/app-nlw-copa-preview.png';
+import logoImg from '../assets/logo.svg';
+import usersAvatarExampleImg from '../assets/users-avatar-example.png';
+import iconCheckImg from '../assets/icon-check.svg';
+import { api } from "../lib/axios";
+import { FormEvent, useState } from "react";
 
 interface HomeProps {
-  poolCount: number
-  guessCount: number
-  userCount: number
+  poolCount: number;
+  guessCount: number;
+  userCount: number;
 }
 
 export default function Home(props: HomeProps) {
-  const [poolTitle, setPoolTitle] = useState("")
+  const [poolTitle, setPoolTitle] = useState('')
 
   async function createPool(event: FormEvent) {
-    event.preventDefault()
+    event.preventDefault();
 
     try {
-      const response = await api.post("/pools", {
-        title: poolTitle,
+      const response = await api.post('/pools', {
+        title: poolTitle
       })
 
-      const { code } = response.data
+      const { code } = response.data;
 
-      await navigator.clipboard.writeText(code)
+      await navigator.clipboard.writeText(code);
 
-      alert(
-        "Bolão criado com sucesso, o código fiu copiado para a área de transferência!"
-      )
+      alert('Bolão criado com sucesso, o código fiu copiado para a área de transferência!');
 
-      setPoolTitle("")
+      setPoolTitle('')
     } catch (err) {
-      console.log(err)
-      alert("Falha ao criar o bolão, tente novamente!")
+      console.log(err);
+      alert('Falha ao criar o bolão, tente novamente!')
     }
   }
 
@@ -51,8 +49,7 @@ export default function Home(props: HomeProps) {
           <Image src={usersAvatarExampleImg} alt="" />
 
           <strong className="text-gray-100 text-xl">
-            <span className="text-ignite-500">+{props.userCount}</span> pessoas
-            já estão usando
+            <span className="text-ignite-500">+{props.userCount}</span> pessoas já estão usando
           </strong>
         </div>
 
@@ -63,7 +60,7 @@ export default function Home(props: HomeProps) {
             required
             placeholder="Qual nome do seu bolão?"
             value={poolTitle}
-            onChange={(event) => setPoolTitle(event.target.value)}
+            onChange={event => setPoolTitle(event.target.value)}
           />
           <button
             className="bg-yellow-500 px-6 py-4 rounded text-gray-900 font-bold text-sm uppercase hover:bg-yellow-700"
@@ -74,8 +71,7 @@ export default function Home(props: HomeProps) {
         </form>
 
         <p className="mt-4 text-sm text-gray-300 leading-relaxed">
-          Após criar seu bolão, você receberá um código único que poderá usar
-          para convidar outras pessoas 🚀
+          Após criar seu bolão, você receberá um código único que poderá usar para convidar outras pessoas 🚀
         </p>
 
         <div className="mt-10 pt-10 border-t border-gray-600 flex items-center justify-between text-gray-100">
@@ -109,18 +105,21 @@ export default function Home(props: HomeProps) {
 }
 
 export const getServerSideProps = async () => {
-  const [poolCountResponse, guessCountResponse, userCountResponse] =
-    await Promise.all([
-      api.get("pools/count"),
-      api.get("guesses/count"),
-      api.get("users/count"),
-    ])
+  const [
+    poolCountResponse,
+    guessCountResponse,
+    userCountResponse
+  ] = await Promise.all([
+    api.get('pools/count'),
+    api.get('guesses/count'),
+    api.get('users/count'),
+  ]);
 
   return {
     props: {
       poolCount: poolCountResponse.data.count,
       guessCount: guessCountResponse.data.count,
       userCount: userCountResponse.data.count,
-    },
+    }
   }
 }
