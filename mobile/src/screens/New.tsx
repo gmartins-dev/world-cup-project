@@ -18,7 +18,7 @@ export function New() {
   async function handlePoolCreate() {
     if (!title.trim()) {
       return toast.show({
-        title: "Informer um nome para o seu bolão",
+        title: "Enter a name for your pool",
         placement: "top",
         bgColor: "red.500",
       })
@@ -30,7 +30,7 @@ export function New() {
       await api.post("/pools", { title: title.toUpperCase() })
 
       toast.show({
-        title: "Bolão criado com sucesso!",
+        title: "Pool created successfully!",
         placement: "top",
         bgColor: "green.500",
       })
@@ -39,7 +39,7 @@ export function New() {
     } catch (error) {
       console.log(error)
       toast.show({
-        title: "Não foi possível criar o bolão",
+        title: "It was not possible to create the pool",
         placement: "top",
         bgColor: "red.500",
       })
@@ -50,7 +50,7 @@ export function New() {
 
   return (
     <VStack flex={1} bg="gray.900">
-      <Header title="Criar novo bolão" />
+      <Header title="Create new pool" />
 
       <VStack mt={8} mx={5} alignItems="center">
         <Logo />
@@ -62,25 +62,25 @@ export function New() {
           my={8}
           textAlign="center"
         >
-          Crie seu próprio bolão da copa{"\n"}e compartilhe entre amigos!
+          Create your own World Cup pool{"\n"}And share with your friends!
         </Heading>
 
         <Input
           mb={2}
-          placeholder="Qual o nome do seu bolão?"
+          placeholder="Qual o nome do sua Pool?"
           onChangeText={setTitle}
           value={title}
         />
 
         <Button
-          title="CRIAR MEU BOLÃO"
+          title="CREATE MY POOL"
           onPress={handlePoolCreate}
           isLoading={isLoading}
         />
 
         <Text color="gray.200" fontSize="sm" textAlign="center" px={10} mt={4}>
-          Após criar seu bolão, você receberá um código único que poderá usar
-          para convidar outras pessoas.
+          After creating your pool, you will receive a unique code you can use
+          to invite other people.
         </Text>
       </VStack>
     </VStack>

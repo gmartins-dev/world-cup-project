@@ -21,7 +21,7 @@ export function Find() {
 
       if (!code.trim()) {
         toast.show({
-          title: "Informe o código",
+          title: "Report the code",
           placement: "top",
           bgColor: "red.500",
         })
@@ -30,7 +30,7 @@ export function Find() {
       await api.post("/pools/join", { code })
 
       toast.show({
-        title: "Você no bolão com sucesso!",
+        title: "You is in the Pool successfully!",
         placement: "top",
         bgColor: "green.500",
       })
@@ -42,7 +42,7 @@ export function Find() {
 
       if (error.response?.data?.message === "Pool not found.") {
         toast.show({
-          title: "Não foi possível encontrar o bolão",
+          title: "It was not possible to find the Pool",
           placement: "top",
           bgColor: "red.500",
         })
@@ -51,7 +51,7 @@ export function Find() {
 
       if (error.response?.data?.message === "You already joined this poll.") {
         toast.show({
-          title: "Você já está nesse bolão",
+          title: "You are already in this Pool",
           placement: "top",
           bgColor: "red.500",
         })
@@ -62,7 +62,7 @@ export function Find() {
 
   return (
     <VStack flex={1} bg="gray.900">
-      <Header title="Buscar por código" showBackButton />
+      <Header title="Search by code" showBackButton />
 
       <VStack mt={8} mx={5} alignItems="center">
         <Heading
@@ -72,18 +72,18 @@ export function Find() {
           mb={8}
           textAlign="center"
         >
-          Encontre um bolão através de{"\n"}
-          seu código único
+         Find a Pool through{"\n"}
+          your unique code
         </Heading>
 
         <Input
           mb={2}
-          placeholder="Qual o código do bolão?"
+          placeholder="What is the Pool code?"
           autoCapitalize="characters"
           onChangeText={setCode}
         />
 
-        <Button title="BUSCAR POR CÓDIGO" onPress={handleJoinPool} />
+        <Button title="SEARCH BY CODE" onPress={handleJoinPool} />
       </VStack>
     </VStack>
   )
