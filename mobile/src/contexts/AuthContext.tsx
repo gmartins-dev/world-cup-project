@@ -17,6 +17,7 @@ interface AuthProviderProps {
 export const AuthContext = createContext({} as AuthContextDataProps)
 
 export function AuthContextProvider({ children }: AuthProviderProps) {
+
   async function signIn() {
     console.log('test sign function');
   }
