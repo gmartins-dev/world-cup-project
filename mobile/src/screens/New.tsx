@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Heading, Text, VStack, useToast } from "native-base"
 
-/* import { api } from "../services/api" */
+import { api } from "../services/api"
 
 import Logo from "../assets/logo.svg"
 

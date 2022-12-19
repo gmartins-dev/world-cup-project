@@ -3,7 +3,7 @@ import { Share } from "react-native"
 import { HStack, useToast, VStack } from "native-base"
 import { useRoute } from "@react-navigation/native"
 
-/* import { api } from "../services/api" */
+import { api } from "../services/api"
 
 import { Header } from "../components/Header"
 import { Loading } from "../components/Loading"

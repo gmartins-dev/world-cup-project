@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Heading, useToast, VStack } from "native-base"
 import { useNavigation } from "@react-navigation/native"
 
-/* import { api } from "../services/api" */
+import { api } from "../services/api"
 
 import { Button } from "../components/Button"
 import { Header } from "../components/Header"
