@@ -7,13 +7,13 @@ import { api } from "../services/api"
 
 import { Button } from "../components/Button"
 import { Header } from "../components/Header"
-/* import { PoolCard, PoolCardPros } from "../components/PoolCard" */
+import { PoolCard, PoolCardProps } from "../components/PoolCard"
 import { Loading } from "../components/Loading"
 import { EmptyPoolList } from "../components/EmptyPoolList"
 
 export function Pools() {
   const [isLoading, setIsLoading] = useState(true)
-  const [pools, setPools] = useState<PoolCardPros[]>([])
+  const [pools, setPools] = useState<PoolCardProps[]>([])
 
   const { navigate } = useNavigation()
   const toast = useToast()

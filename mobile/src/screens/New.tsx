@@ -36,10 +36,11 @@ export function New() {
       })
 
       setTitle("")
+      
     } catch (error) {
       console.log(error)
       toast.show({
-        title: "It was not possible to create the pool",
+        title: "It was not possible to create the Pool",
         placement: "top",
         bgColor: "red.500",
       })

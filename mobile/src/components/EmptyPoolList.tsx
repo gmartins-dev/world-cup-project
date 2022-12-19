@@ -1,25 +1,29 @@
-import { Row, Text, Pressable } from 'native-base';
+import { Row, Text, Pressable } from "native-base"
 
 export function EmptyPoolList() {
   return (
     <Row flexWrap="wrap" justifyContent="center">
       <Text color="white" fontSize="sm" textAlign="center">
-        Você ainda não está participando de {'\n'} nenhum bolão, que tal
+        You are not yet participating in {"\n"} of a Pool, how about
       </Text>
 
       <Pressable>
-          <Text textDecorationLine="underline" color="yellow.500" textDecoration="underline">
-            buscar um por código
-          </Text>
+        <Text
+          textDecorationLine="underline"
+          color="yellow.500"
+          textDecoration="underline"
+        >
+          search for one by code
+        </Text>
       </Pressable>
 
       <Text color="white" fontSize="sm" textAlign="center" mx={1}>
-        ou
+        or
       </Text>
 
       <Pressable>
-        <Text textDecorationLine="underline"  color="yellow.500">
-          criar um novo
+        <Text textDecorationLine="underline" color="yellow.500">
+          create a new Pool
         </Text>
       </Pressable>
 
@@ -27,5 +31,5 @@ export function EmptyPoolList() {
         ?
       </Text>
     </Row>
-  );
+  )
 }
