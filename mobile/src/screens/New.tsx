@@ -67,7 +67,7 @@ export function New() {
 
         <Input
           mb={2}
-          placeholder="Qual o nome do sua Pool?"
+          placeholder="What is the name of your Pool?"
           onChangeText={setTitle}
           value={title}
         />
