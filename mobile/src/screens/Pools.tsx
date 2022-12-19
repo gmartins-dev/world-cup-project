@@ -3,11 +3,11 @@ import { VStack, Icon, useToast, FlatList } from "native-base"
 import { Octicons } from "@expo/vector-icons"
 import { useNavigation, useFocusEffect } from "@react-navigation/native"
 
-import { api } from "../services/api"
+/* import { api } from "../services/api" */
 
 import { Button } from "../components/Button"
 import { Header } from "../components/Header"
-import { PoolCard, PoolCardPros } from "../components/PoolCard"
+/* import { PoolCard, PoolCardPros } from "../components/PoolCard" */
 import { Loading } from "../components/Loading"
 import { EmptyPoolList } from "../components/EmptyPoolList"
 
