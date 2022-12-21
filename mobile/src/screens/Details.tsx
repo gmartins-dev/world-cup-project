@@ -39,7 +39,7 @@ export function Details() {
     } catch (error) {
       console.log(error)
       toast.show({
-        title: "Não foi possível carregar os detalhes do bolão",
+        title: "It was not possible to carry the details of the Pool",
         placement: "top",
         bgColor: "red.500",
       })
