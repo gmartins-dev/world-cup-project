@@ -91,7 +91,7 @@ export function Game({
         >
           <HStack alignItems="center">
             <Text color="white" fontSize="xs" fontFamily="heading" mr={3}>
-              CONFIRMAR PALPITE
+              CONFIRM YOUR GUESS
             </Text>
 
             <Check color={colors.white} size={sizes[4]} />
