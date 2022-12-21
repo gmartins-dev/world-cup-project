@@ -6,3 +6,4 @@ LEMBRETES:
 [] alterar logo (usar da copa do qatar)
 [] alterar nome do app para "BeMyGuess"
 [] criar data fake para tests/demonstração
+[] criar readme bunitinho
