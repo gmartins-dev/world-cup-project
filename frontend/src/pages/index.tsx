@@ -27,12 +27,12 @@ export default function Home(props: HomeProps) {
 
       await navigator.clipboard.writeText(code);
 
-      alert('Bolão criado com sucesso, o código fiu copiado para a área de transferência!');
+      alert('Pool successfully created, the code has been copied to the transfer area!');
 
       setPoolTitle('')
     } catch (err) {
       console.log(err);
-      alert('Falha ao criar o bolão, tente novamente!')
+      alert('Failure when creating the pool, try again!')
     }
   }
 
@@ -42,14 +42,14 @@ export default function Home(props: HomeProps) {
         <Image src={logoImg} alt="NLW Copa" />
 
         <h1 className="mt-14 text-white text-5xl font-bold leading-tight">
-          Crie seu próprio bolão da copa e compartilhe entre amigos!
+          Create your own World Cup Pool and share wih your friends!
         </h1>
 
         <div className="mt-10 flex items-center gap-2">
           <Image src={usersAvatarExampleImg} alt="" />
 
           <strong className="text-gray-100 text-xl">
-            <span className="text-ignite-500">+{props.userCount}</span> pessoas já estão usando
+            <span className="text-ignite-500">+{props.userCount}</span> people are already using
           </strong>
         </div>
 
@@ -58,7 +58,7 @@ export default function Home(props: HomeProps) {
             className="flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-sm text-gray-100"
             type="text"
             required
-            placeholder="Qual nome do seu bolão?"
+            placeholder="What name of your Pool?"
             value={poolTitle}
             onChange={event => setPoolTitle(event.target.value)}
           />
@@ -66,12 +66,12 @@ export default function Home(props: HomeProps) {
             className="bg-yellow-500 px-6 py-4 rounded text-gray-900 font-bold text-sm uppercase hover:bg-yellow-700"
             type="submit"
           >
-            Criar meu bolão
+            Create new Pool
           </button>
         </form>
 
         <p className="mt-4 text-sm text-gray-300 leading-relaxed">
-          Após criar seu bolão, você receberá um código único que poderá usar para convidar outras pessoas 🚀
+          After creating your Pool, you will receive a unique code you can use to invite others 🚀
         </p>
 
         <div className="mt-10 pt-10 border-t border-gray-600 flex items-center justify-between text-gray-100">
@@ -79,7 +79,7 @@ export default function Home(props: HomeProps) {
             <Image src={iconCheckImg} alt="" />
             <div className="flex flex-col">
               <span className="font-bold text-2xl">+{props.poolCount}</span>
-              <span>Bolões criados</span>
+              <span>Pools created</span>
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export default function Home(props: HomeProps) {
             <Image src={iconCheckImg} alt="" />
             <div className="flex flex-col">
               <span className="font-bold text-2xl">+{props.guessCount}</span>
-              <span>Palpites enviados</span>
+              <span>Posted guesses</span>
             </div>
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function Home(props: HomeProps) {
 
       <Image
         src={appPreviewImg}
-        alt="Dois celulares exibindo uma prévia da aplicação do NLW Copa"
+        alt="Two cell phones displaying a preview of the application BeMyGuess"
         quality={100}
       />
     </div>
