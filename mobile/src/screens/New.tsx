@@ -36,7 +36,7 @@ export function New() {
       })
 
       setTitle("")
-      
+
     } catch (error) {
       console.log(error)
       toast.show({
@@ -54,7 +54,7 @@ export function New() {
       <Header title="Create new pool" />
 
       <VStack mt={8} mx={5} alignItems="center">
-        <Logo />
+        <Logo width={424} height={170} />
 
         <Heading
           fontFamily="heading"
@@ -63,7 +63,7 @@ export function New() {
           my={8}
           textAlign="center"
         >
-          Create your own World Cup pool{"\n"}And share with your friends!
+          Create your own World Cup pool{"\n"}and share with your friends!
         </Heading>
 
         <Input

@@ -8,3 +8,4 @@ LEMBRETES:
 [] criar data fake para tests/demonstração
 [] atualizar figma para demonstracao
 [] criar readme bunitinho
+[x] atualizar web version
