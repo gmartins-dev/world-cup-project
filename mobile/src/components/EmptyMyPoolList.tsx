@@ -1,4 +1,4 @@
-import { Row, Text, Pressable } from "native-base"
+import { Pressable, Row, Text } from "native-base"
 import { Share } from "react-native"
 
 interface Props {
@@ -15,7 +15,7 @@ export function EmptyMyPoolList({ code }: Props) {
   return (
     <Row flexWrap="wrap" justifyContent="center" p={4}>
       <Text color="gray.200" fontSize="sm">
-        Esse bolão ainda não tem participantes, que tal
+        This pool has no participants yet, how about
       </Text>
 
       <Pressable onPress={handleCodeShare}>
@@ -24,16 +24,16 @@ export function EmptyMyPoolList({ code }: Props) {
           color="yellow.500"
           textDecoration="underline"
         >
-          compartilhar o código
+          share the Pool code
         </Text>
       </Pressable>
 
       <Text color="gray.200" fontSize="sm" mx={1}>
-        do bolão com alguém?
+        with someone?
       </Text>
 
       <Text color="gray.200" mr={1}>
-        Use o código
+        Use the code
       </Text>
 
       <Text

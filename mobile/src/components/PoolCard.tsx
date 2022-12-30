@@ -1,7 +1,7 @@
+import { HStack, Heading, Text, VStack } from "native-base"
 import { TouchableOpacity, TouchableOpacityProps } from "react-native"
-import { Heading, HStack, Text, VStack } from "native-base"
 
-import { Participants, ParticipantProps } from "./Participants"
+import { ParticipantProps, Participants } from "./Participants"
 
 export interface PoolCardProps {
   id: string
@@ -43,7 +43,7 @@ export function PoolCard({ data, ...rest }: Props) {
           </Heading>
 
           <Text color="gray.200" fontSize="xs">
-            Criado por {data.owner.name}
+            Created by {data.owner.name}
           </Text>
         </VStack>
 
