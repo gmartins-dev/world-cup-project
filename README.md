@@ -82,13 +82,14 @@ The project consists of an application with the Football World Cup 2022, which w
 </kbd>
 </p>
 
+<p align="center">
 <kbd>
 <img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/06/18/QGj06Iws_o.png" alt="">
 </kbd>
 <kbd>
 <img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/34/2a/Ds4GyE3o_o.png" alt="">
 </kbd>
-
+</p>
 
 <p align="center">
 <kbd>
