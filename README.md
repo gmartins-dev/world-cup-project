@@ -66,7 +66,7 @@ This project used the following libraries:
 
 <p align="center">
 <kbd>
-<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/34/2a/Ds4GyE3o_o.png" alt="">
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/67/67/AFCB4NMH_o.png" alt="">
 </kbd>
 </p>
 
@@ -75,7 +75,7 @@ This project used the following libraries:
 <img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/67/67/AFCB4NMH_o.png" alt="">
 </kbd>
 <kbd>
-<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/9d/b7/ssx6DBlQ_o.png" alt="">
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/34/2a/Ds4GyE3o_o.png" alt="">
 </kbd>
 </p>
 
