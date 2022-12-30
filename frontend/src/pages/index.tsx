@@ -41,21 +41,21 @@ export default function Home(props: HomeProps) {
       <main>
         <Image src={logoImg} alt="NLW Copa" />
 
-        <h1 className="mt-14 text-white text-5xl font-bold leading-tight">
+        <h1 className="text-5xl font-bold leading-tight text-white mt-14">
           Create your own World Cup Pool and share wih your friends!
         </h1>
 
-        <div className="mt-10 flex items-center gap-2">
+        <div className="flex items-center gap-2 mt-10">
           <Image src={usersAvatarExampleImg} alt="" />
 
-          <strong className="text-gray-100 text-xl">
+          <strong className="text-xl text-gray-100">
             <span className="text-ignite-500">+{props.userCount}</span> people are already using
           </strong>
         </div>
 
-        <form onSubmit={createPool} className="mt-10 flex gap-2">
+        <form onSubmit={createPool} className="flex gap-2 mt-10">
           <input
-            className="flex-1 px-6 py-4 rounded bg-gray-800 border border-gray-600 text-sm text-gray-100"
+            className="flex-1 px-6 py-4 text-sm text-gray-100 bg-gray-800 border border-gray-600 rounded"
             type="text"
             required
             placeholder="What name of your Pool?"
@@ -63,32 +63,32 @@ export default function Home(props: HomeProps) {
             onChange={event => setPoolTitle(event.target.value)}
           />
           <button
-            className="bg-yellow-500 px-6 py-4 rounded text-gray-900 font-bold text-sm uppercase hover:bg-yellow-700"
+            className="px-6 py-4 text-sm font-bold text-gray-900 uppercase bg-yellow-500 rounded hover:bg-yellow-700"
             type="submit"
           >
             Create new Pool
           </button>
         </form>
 
-        <p className="mt-4 text-sm text-gray-300 leading-relaxed">
+        <p className="mt-4 text-sm leading-relaxed text-gray-300">
           After creating your Pool, you will receive a unique code you can use to invite others 🚀
         </p>
 
-        <div className="mt-10 pt-10 border-t border-gray-600 flex items-center justify-between text-gray-100">
+        <div className="flex items-center justify-between pt-10 mt-10 text-gray-100 border-t border-gray-600">
           <div className="flex items-center gap-6">
             <Image src={iconCheckImg} alt="" />
             <div className="flex flex-col">
-              <span className="font-bold text-2xl">+{props.poolCount}</span>
+              <span className="text-2xl font-bold">+{props.poolCount}</span>
               <span>Pools created</span>
             </div>
           </div>
 
-          <div className="w-px h-14 bg-gray-600" />
+          <div className="w-px bg-gray-600 h-14" />
 
           <div className="flex items-center gap-6">
             <Image src={iconCheckImg} alt="" />
             <div className="flex flex-col">
-              <span className="font-bold text-2xl">+{props.guessCount}</span>
+              <span className="text-2xl font-bold">+{props.guessCount}</span>
               <span>Posted guesses</span>
             </div>
           </div>
