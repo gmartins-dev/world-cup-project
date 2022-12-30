@@ -60,18 +60,35 @@ This project used the following libraries:
 </br>
 <p  align="center">
   <kbd>
-<img width="615" style="border-radius: 5px" height="400" src="https://images2.imgbox.com/29/5e/svVs4bWC_o.gif" alt="">
+<img width="90%" style="border-radius: 5px" height="400" src="https://images2.imgbox.com/3b/2a/FEwP5IGn_o.png" alt="">
 </kbd>
 </p>
 
 <p align="center">
 <kbd>
-<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/8a/b6/4YftemEL_o.png" alt="">
-</kbd>
-<kbd>
-<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/7d/65/pc5MAkK2_o.png" alt="">
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/34/2a/Ds4GyE3o_o.png" alt="">
 </kbd>
 </p>
+
+<p align="center">
+<kbd>
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/67/67/AFCB4NMH_o.png" alt="">
+</kbd>
+<kbd>
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/9d/b7/ssx6DBlQ_o.png" alt="">
+</kbd>
+</p>
+
+<p align="center">
+<kbd>
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/8c/72/oCASlfnU_o.png" alt="">
+</kbd>
+<kbd>
+<img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/c4/85/OKRzXTTD_o.png" alt="">
+</kbd>
+</p>
+
+
 
 </br>
 
