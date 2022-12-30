@@ -74,19 +74,21 @@ The project consists of an application with the Football World Cup 2022, which w
   <kbd>
 <img width="100%" style="border-radius: 5px" height="70%" src="https://images2.imgbox.com/3b/2a/FEwP5IGn_o.png" alt="">
 </kbd>
-  <kbd>
-<img width="100%" style="border-radius: 5px" height="70%" src="https://images2.imgbox.com/9d/b7/ssx6DBlQ_o.png" alt="">
-</kbd>
 </p>
 
 <p align="center">
+<kbd>
+<img width="100%" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/67/67/AFCB4NMH_o.png" alt="">
+</kbd>
+</p>
+
 <kbd>
 <img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/06/18/QGj06Iws_o.png" alt="">
 </kbd>
 <kbd>
 <img width="300" style="border-radius: 5px" height="600" src="https://images2.imgbox.com/34/2a/Ds4GyE3o_o.png" alt="">
 </kbd>
-</p>
+
 
 <p align="center">
 <kbd>
