@@ -60,7 +60,7 @@ This project used the following libraries:
 </br>
 <p  align="center">
   <kbd>
-<img width="100%" style="border-radius: 5px" height="70%" src="https://images2.imgbox.com/3b/2a/FEwP5IGn_o.png" alt="">
+<img width="100%" style="border-radius: 5px" height="60%" src="https://images2.imgbox.com/3b/2a/FEwP5IGn_o.png" alt="">
 </kbd>
 </p>
 
